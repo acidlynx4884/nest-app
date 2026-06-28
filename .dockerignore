@@ -1,0 +1,50 @@
+# Dependencies and build output
+node_modules
+dist
+build
+coverage
+
+# Git
+.git
+.gitignore
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and temp files
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.temp
+.tmp
+
+# OS and IDE
+.DS_Store
+.idea
+.vscode
+*.swp
+*.swo
+
+# Tests
+test
+**/*.spec.ts
+**/*.e2e-spec.ts
+jest-e2e.json
+
+# Documentation and local notes
+README.md
+*.md
+!prisma/**/*.md
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Prisma generated client (rebuilt in the image)
+src/generated

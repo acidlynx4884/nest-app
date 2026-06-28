@@ -11,4 +11,11 @@ export class UsersService {
       orderBy: { id: 'asc' },
     });
   }
+
+  findOne(id: number) {
+    return this.prisma.user.findUnique({
+      where: { id },
+    });
+  }
+
 }
